@@ -63,6 +63,15 @@ const media = await MessageMedia.fromUrl('https://via.placeholder.com/350x150.pn
 chat.sendMessage(media);
 ```
 
+### Sending through client
+```javascript
+const { MessageMedia } = require('whatsapp-web.js');
+
+const media = await MessageMedia.fromUrl('https://via.placeholder.com/350x150.png');
+client.sendMessage (message.from, media);
+```
+
+
 
 ### Caveat for sending videos and gifs
 
